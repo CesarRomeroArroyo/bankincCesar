@@ -1,0 +1,72 @@
+@import 'src/assets/styles/_variables.scss';
+
+.product {
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  border: 0.1px solid #a5a5a4;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  flex-basis: 20%;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+
+  &-header {
+    flex-basis: 30%;
+
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+
+  &-body {
+    flex-basis: 50%;
+    &__images{
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0.4rem;
+    }
+  }
+
+  &-footer {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+
+    &-button {
+      cursor: pointer;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: $secundary-color;
+      color: $color-light;
+      padding: 0.5rem;
+      width: 8rem;
+      height: 2rem;
+    }
+
+    &-button:hover {
+      color: $color-light;
+      background-color: $primary-color;
+      border: 1px solid $warning-color;
+      transition: 0.5s all ease;
+    }
+  }
+}
+
+.product:hover {
+  scale: (1.05)
+}
+
+.msgAddProduct{
+  background-color: $danger-color;
+  color: $color-light;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 10rem;
+  transition: 50s all ease;
+}
+

@@ -1,0 +1,17 @@
+<article class="product">
+  <div class="product-header">
+    <h3 class="product-header-title">{{ title | uppercase }}</h3>
+    <p>$ {{ "price | currency" }}</p>
+  </div>
+  <div class="product-body">
+    <img src="{{images[0]}}" class="product-body__images" alt="producto" />
+  </div>
+  <div class="product-footer">
+    <button class="product-footer-button" (click)="saveProduct(products)">
+      Agregar <i class="fa-solid fa-basket-shopping"></i>
+    </button>
+    <div class="msgAddProduct" *ngIf="notification">
+      producto agregado
+    </div>
+  </div>
+</article>

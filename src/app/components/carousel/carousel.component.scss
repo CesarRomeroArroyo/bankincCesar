@@ -1,0 +1,11 @@
+.carousel {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.carousel img {
+  width: 100%;
+  transition: opacity 0.5s;
+  height: 60vh;
+  object-fit: cover;
+}
